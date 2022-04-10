@@ -1,0 +1,51 @@
+<html>
+<title>CSV assignment</title>
+
+<body>
+	<input id="files" type="file" multiple />
+	<br />
+	<button id="print-books-magazines">Print books and magazines</button>
+	<button id="print-books-magazines-sort">Print books and magazines sorted by title</button>
+	<div>
+		<input id="input-find-book-magazine-isbn" type="text" placeholder="Enter ISBN of book or magazine" />
+		<button id="find-by-isbn">Find Magazine or book by ISBN</button>
+	</div>
+	<div>
+		<input id="input-find-book-magazine-email" type="email" placeholder="Enter author email of book or magazine" />
+		<button id="find-by-email">Find Magazine or book by email</button>
+	</div>
+	<button id="add-book-magazine">Add book or magazine</button>
+	<input type="radio" id="book-radio" name="my_book" value="book" style="display: none;" checked>
+	<label id="add-book-label" for="book" style="display: none;">Book</label><br>
+	<input type="radio" id="magazine-radio" name="my_magazine" value="magazine" style="display: none;">
+	<label id="add-magazine-label" for="magazine" style="display: none;">Magazine</label><br>
+	<div id="book-form" style="display: none;">
+		<p>Enter Title</p>
+		<input id="book-title" type="text" placeholder="Enter Title" />
+		<p>Enter ISBN</p>
+		<input id="book-isbn" type="text" placeholder="Enter ISBN" />
+		<p>Enter Authors</p>
+		<input id="book-authors" type="text" placeholder="Enter authors" />
+		<p>Enter Description</p>
+		<input id="book-description" type="text" placeholder="Enter description" />
+		<button id="book-submit">Submit</button>
+	</div>
+	<div id="magazine-form" style="display: none;">
+		<p>Enter Title</p>
+		<input id="magazine-title" type="text" placeholder="Enter Title" />
+		<p>Enter ISBN</p>
+		<input id="magazine-isbn" type="text" placeholder="Enter ISBN" />
+		<p>Enter Authors</p>
+		<input id="magazine-authors" type="text" placeholder="Enter authors" />
+		<p>Enter Publishing Date</p>
+		<input id="magazine-publishedAt" type="date" placeholder="Enter Publishing Date" />
+		<button id="magazine-submit">Submit</button>
+	</div>
+	
+	<table id="table-books"></table>
+	<table id="table-authors"></table>
+	<table id="table-maganizes"></table>
+</body>
+<script src="./app.js"></script>
+
+</html>
